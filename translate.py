@@ -4,6 +4,8 @@ class Numcode:
 		self.translation = '' #Variable which stores the translation into the cipher
 		self.alpha='abcdefghijklmnopqrstuvwxyz' #Just used to simplify code later on
 		self.numb=['01','02','03','04','05','06','07','08','09','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26']
+		
+	def Translate():
 		for x in range(len(self.message)):
            	if self.message[x].isalpha(): 
             	self.numb[x]=self.alpha[x]
@@ -17,7 +19,7 @@ class Numcode:
 					self.numb[x] == ''
 				return self.translation.append(self.numb)
 	
-	
+	Translate()
 	
 		'''for i in range(len(self.message)):
 		    if(i.isalpha()):
