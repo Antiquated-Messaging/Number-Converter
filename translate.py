@@ -10,8 +10,13 @@ class Numcode:
                 self.numb[x]=self.alpha[x]
 				return self.translation.append(self.numb)
 			else:
-				self.numb=self.message[x]
-			self.translation = self.translation.append(self.numb)
+				if self.message[x] == '.':
+					self.numb[x] == '.'
+				elif self.message[x] == ' ':
+					self.numb[x] == ' '
+				else: 
+					self.numb[x] == ''
+				return self.translation.append(self.numb)
 	
 	
 	
