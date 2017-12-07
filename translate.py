@@ -6,8 +6,8 @@ class Numcode:
 		self.alpha='abcdefghijklmnopqrstuvwxyz' #Just used to simplify code later on
 		self.numb=['01','02','03','04','05','06','07','08','09','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26']
 		for x in range(len(self.message)):
-           		if self.message[x].isalpha(): 
-                		self.numb[x]=self.alpha[x]
+           	if self.message[x].isalpha(): 
+                self.numb[x]=self.alpha[x]
 				return self.translation.append(self.numb)
 			else:
 				self.numb=self.message[x]
